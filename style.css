@@ -1,0 +1,256 @@
+:root {
+    --lightred: hsl(0, 100%, 67%);
+    --orangeyyellow: hsl(39, 100%, 56%);
+    --greenteal: hsl(166, 100%, 37%);
+    --cobaltblue: hsl(234, 85%, 45%);
+    --lightslateblue: hsl(252, 100%, 67%);
+    --lightroyalblue: hsl(241, 81%, 54%);
+    --violetblue: hsla(256, 72%, 46%, 1);
+    --persianblue: hsla(241, 72%, 46%, );
+    --paleblue: hsl(221, 100%, 96%);
+    --lightlavender: hsl(241, 100%, 89%);
+    --darkgreyblue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    min-height: 300px;
+    border-radius: 16px;
+    background-color: white;
+    overflow: hidden;
+    margin: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.result {
+    background: linear-gradient(to bottom, hsl(252, 100%, 65%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 60px;
+    border-radius: 16px;
+}
+
+.heading {
+    color: var(--lightlavender);
+    font-size: 20px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsl(224, 38%, 45%), hsl(241, 81%, 54%));
+}
+
+.circle h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.circle p {
+    color: var(--lightlavender);
+    font-size: 16px;
+}
+
+.result h2 {
+    color: white;
+}
+
+.center {
+    text-align: center;
+    color: var(--lightlavender);
+}
+
+.summary {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 24px 32px;
+    gap: 30px;
+}
+
+.summary h1 {
+    font-size: 26px;
+    color: var(--persianblue);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    /* light red background */
+    color: var(--lightred);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.reaction .left {
+    display: flex;
+    gap: 8px;
+}
+
+.reaction img {
+    width: 20px;
+    height: 20px;
+}
+
+.reaction .label {
+    color: var(--lightred);
+}
+
+.reaction .score {
+    color: var(--darkgreyblue);
+}
+
+.reaction .total {
+    color: gray;
+}
+
+.memory {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    /* light red background */
+    color: var(--lightred);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.memory .left {
+    display: flex;
+    gap: 8px;
+}
+
+.memory img {
+    width: 20px;
+    height: 20px;
+}
+
+.memory .label {
+    color: var(--lightred);
+}
+
+.memory .score {
+    color: var(--darkgreyblue);
+}
+
+.memory .total {
+    color: gray;
+}
+
+.verbal {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    /* light red background */
+    color: var(--lightred);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.verbal .left {
+    display: flex;
+    gap: 8px;
+}
+
+.verbal img {
+    width: 20px;
+    height: 20px;
+}
+
+.verbal .label {
+    color: var(--lightred);
+}
+
+.verbal .score {
+    color: var(--darkgreyblue);
+}
+
+.verbal .total {
+    color: gray;
+}
+
+.visual {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    /* light red background */
+    color: var(--lightred);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.visual .left {
+    display: flex;
+    gap: 8px;
+}
+
+.visual img {
+    width: 20px;
+    height: 20px;
+}
+
+.visual .label {
+    color: var(--lightred);
+}
+
+.visual .score {
+    color: var(--darkgreyblue);
+}
+
+.visual .total {
+    color: gray;
+}
+
+button {
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--lightlavender);
+    background-color: hsla(241, 72%, 46%);
+    border-style: none;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+        margin: 30px;
+    }
+}
+
+
